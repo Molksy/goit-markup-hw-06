@@ -71,7 +71,7 @@
             <div class="hero-headercontainer">
               <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
             </div>
-            <button type="button" class="hero-button" data-modal-open>
+            <button aria-label="Замовити послугу" type="button" class="hero-button" data-modal-open>
               <span class="hero-button-text">Замовити послугу</span>
             </button>
           </div>
@@ -396,8 +396,7 @@
             <li class="our-clients-list-item">
               <a class="our-clients-list-link" href="/">
                 <svg class="our-clients-item-svg" width="106" height="60">
-                  <use href="./images/icons.svg#company"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#company"></use></svg></a>
             </li>
             <li class="our-clients-list-item">
               <a href="/" class="our-clients-list-link">
@@ -503,18 +502,18 @@
               <h3 class="sign">Підпишіться на розсилку</h3>
               <form class="form-sign">
             
-               <input class="form-sign-input" type="email" id="email" name="email" placeholder="E-mail">
+               <input class="form-sign-input" type="email" id="email-sign" name="email" placeholder="E-mail">
                <button type="button" class="footer-button">
                 Підписатися
               <svg class="send-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"/></use>
+                <use href="./images/icons.svg#icon-send"/> 
               </svg>
               </button>
              </form>
            </div>
           </div>
         </div>
-      </div>
+
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -559,14 +558,14 @@
       
       <div class="form-checkbox">
         <label for="checkbox">
-          <input class="checkbox-input" type="checkbox" name="conditions" id="checkbox"/>
+          <input class="checkbox-input" type="checkbox" name="terms" id="checkbox">
             <svg class="checkbox-icon">
-            <use href="./images/icons.svg#Vector"></use>
+            <use href="./images/icons.svg#icon-check"></use>
             </svg>
-            Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+            Погоджуюся з розсилкою та приймаю <a href="#" class="form-checkbox-link">Умови договору</a></label>
             </div>
       
-            <button type="submit" class="form-button">Відправити</button>
+            <button aria-label="Відправити форму" type="submit" class="form-button">Відправити</button>
           </form>
         </div>
       </div>
